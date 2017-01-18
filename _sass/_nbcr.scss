@@ -1,46 +1,33 @@
 
 /* colors */
 $white: #fff;
-
-$blue:       #455979;
+$blue:  #455979;
 $blue-light: lighten($blue, 25%);
 $blue-dark:  darken($blue, 25%);
-
 $orange: #e55909;
-
 $teal-dark: #196b89;
 $teal-light: #379bbf;
-
 $grey: #667788;
 $grey-light: #fafafa;
 
-.center-image {
-    margin: 0 auto;
-    display: block;
-}
+.center-image { margin: 0 auto; display: block; }
 
+/* resources table */
+.resources  { padding: 2px; width: 90%; }
+.resources th { font-weight: bold; color: $white;  font-size: 12px; background: $blue-light;}
+.resources tr { border: 2px solid white; }
+.resources tr:hover { background-color: #f5f5f5 }
+.resources tr:nth-child(odd) { background-color : #F5FAFF; }
+.resources tr:nth-child(even) { background-color : #E6F2FF; }
+.resources td { padding : 5px 2px 5px 10px; }
+.resources tr td:nth-child(1) { font-weight : bold; }
 
 /* meetings table */
+.meeting { padding: 0; }
+.meeting td { padding: 10px 15px 10px 5px; }
 
-.meeting {
-    padding: 0;
-}
-
-.meeting td {
-    padding: 10px 15px 10px 5px;
-}
-
-.strongword {
-    font-weight: 500;
-    color: $teal-dark;
-}
-
-.border {
-    color: $orange;
-    background-color: #eee;
-    font-weight: 700;
-}
-
+.strongword { font-weight: 500; color: $teal-dark; }
+.border { color: $orange; background-color: #eee; font-weight: 700; }
 
 /* ----- column-left ----- */
 .column-left {
@@ -68,7 +55,6 @@ ul { padding:0px 14px 10px 14px;text-align:justify; }
     padding-top: 2px;
 }
 /*    #column-right .divider {width:200px; height:1px; background:#fff; margin:0 0 10px 0;} */
-
 .quicklinks {background:$grey-light; margin-bottom:20px;}
 /*
     .quicklinks span {color:#338ba7; font-weight:bold;}
@@ -82,16 +68,13 @@ ul { padding:0px 14px 10px 14px;text-align:justify; }
 .ql-entry a:link, .ql-entry a:visited  { color:$teal-light; text-decoration:none; outline:none; }
 .ql-entry a:hover, .ql-entry a:active  { color:$teal-dark; text-decoration:none; outline:none; }
 
-
 /* people images */
 img.thum-left { float:left; margin: 0 10px 0 0; width: 100px; }
 img.thum-right { float:right; margin: 0 10px 0 0;  width: 100px;}
 
-
 /* page images */
 img.img-left { float:left; margin:0 10px 0 0; }
 img.img-right { float:right; margin:0 0 0 10px; }
-
 
 /* overview images */
 .collab {float:left; margin:10px 20px 10px 12px;}
