@@ -132,6 +132,7 @@ and batch computational jobs.
        </ul>
        </td>
   </tr>
+<!---
   <tr><td>high cpu/high memory node</td>
       <td>
       <ul>
@@ -142,6 +143,7 @@ and batch computational jobs.
       </ul>
       </td>
   </tr>
+-->
   <tr><td>1GB ethernet network</td> 
        <td>2 SMC TigerSTack II SMC8848M 48 port stackable switches </td>
   </tr>
