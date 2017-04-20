@@ -64,65 +64,31 @@ and batch computational jobs.
       <td>Dell PowerEdge R410 server:
       <ul>
       <li> 32Gb memory</li>
-      <li> 2 quad-core Intel XeonE5620 2.4Ghz processors</li>
+      <li> 2 quad-core Intel XeonE5620 2.4GHz processors</li>
       <li> 500Gb disk</li>
       </ul>
       </td>
   </tr>
-  <tr><td>32 compute nodes</td>
+  <tr><td>28 compute nodes</td>
       <td>Dell PowerEdge R410 server:
       <ul>
       <li>24GB memory </li>
-      <li>2 quad-core Intel XeonE5620 2.4Ghz processors </li>
+      <li>2 quad-core Intel XeonE5620 2.4GHz processors </li>
       <li>500GB disk </li>
       </ul>
       </td>
   </tr>
-  <tr><td>4 virtual container nodes</td>
-      <td>Dell PowerEdge R610 server:
-      <ul>
-      <li>64GB memory </li>
-      <li>2 quad-core Intel XeonE5650 2.66 Ghz processors </li>
-      <li>2TB disk </li>
-      </ul>
-      </td>
-  </tr>
-  <tr><td>8 GPU nodes</td>
+  <tr><td>7 GPU nodes</td>
       <td>Rackform iSErv R350.v2 server:
       <ul>
-      <li>48GB memory </li>
-      <li>dual Intel XeonX5650 6-core 2.66Ghz processors </li>
-      <li>4TB disk </li>
+      <li>192Gb memory (4 nodes), 96GB memory (3 nodes)</li>
+      <li>dual Intel XeonX5650 6-core 2.66GHz processors </li>
+      <li>2TB disk </li>
+       <li>2 GPU M2050 Tesla </li>
       </ul>
       </td>
   </tr>
-<!--  Dead node
-  <tr><td>high memory node</td>
-      <td>Rackform iServ R422 server:
-      <ul> 
-      <li>256 Gb memory</li>
-      <li>4 Intel Xeon E7530 6-core 1.86Ghz</li>
-      <li>4TB disk</li>
-      </ul> 
-      </td> 
-  </tr>
--->
-  <tr><td>3 storage servers</td>
-      <td>2 Aberdeen Stirling X538:
-      <ul> 
-      <li>dual Intel Xeon E5530 quad core 2.4 Ghz </li>
-      <li>12Gb memory </li>
-      <li>48Tb disk </li>
-      </ul> 
-         1 SunFire x4540 server:
-      <ul> 
-      <li>dual 6-core AMD opteron model 2435 2.6 Ghz processors </li>
-      <li>32 Gb memory </li>
-      <li>48Tb disk </li>
-      </ul> 
-      </td> 
-  </tr>
-  <tr><td>6 gpu nodes</td>
+  <tr><td>6 GPU nodes</td>
       <td>Dell PowerEdge R720
        <ul>
        <li>384 Gb memory </li>
@@ -131,6 +97,52 @@ and batch computational jobs.
        <li>150Gb disk </li>
        </ul>
        </td>
+  </tr>
+  <tr><td>4 GPU nodes</td>
+      <td>Dell PowerEdge R720
+       <ul>
+       <li>dual Intel Xeon E5-2630 6 core 2.30 GHz </li>
+       <li>192 Gb memory </li>
+       <li>1 GPU M2075 Tesla </li>
+       <li>12 CPUs (24 threads)</li>
+       <li>1Tb disk </li>
+       </ul>
+       </td>
+  </tr>
+<!--  Dead node
+  <tr><td>high memory node</td>
+      <td>Rackform iServ R422 server:
+      <ul> 
+      <li>256 Gb memory</li>
+      <li>4 Intel Xeon E7530 6-core 1.86GHz</li>
+      <li>4TB disk</li>
+      </ul> 
+      </td> 
+  </tr>
+-->
+  <tr><td>3 storage servers</td>
+      <td>2 Aberdeen Stirling X538:
+      <ul> 
+      <li>dual Intel Xeon E5530 quad core 2.4 GHz </li>
+      <li>12Gb memory </li>
+      <li>48Tb disk </li>
+      </ul> 
+         1 SunFire x4540 server:
+      <ul> 
+      <li>dual 6-core AMD opteron model 2435 2.6 GHz processors </li>
+      <li>32 Gb memory </li>
+      <li>48Tb disk </li>
+      </ul> 
+      </td> 
+  </tr>
+  <tr><td>4 virtual container nodes</td>
+      <td>Dell PowerEdge R610 server:
+      <ul>
+      <li>64GB memory </li>
+      <li>2 quad-core Intel XeonE5650 2.66 GHz processors </li>
+      <li>2TB disk </li>
+      </ul>
+      </td>
   </tr>
 <!---
   <tr><td>high cpu/high memory node</td>
