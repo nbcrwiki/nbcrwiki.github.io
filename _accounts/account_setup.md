@@ -8,7 +8,7 @@ order: 2
 
 -   Generate ssh2 (openssh format) key pair on your personal computer or
     another host where you have an account. See [SSH
-    Introduction](/resources/ssh_introduction "SSH Introduction").
+    Introduction](/accounts/ssh_introduction "SSH Introduction").
     Use a passphrase when generating your keys, you will use this
     passphrase for your logins on the cluster.
 
@@ -42,7 +42,7 @@ order: 2
 
         PubkeyAcceptedKeyTypes +ssh-dss
 
-    (2) re-create a new ssh keyin RSA format with 
+    (2) re-create a new ssh key in RSA format with 
 
         ssh-keygen -t rsa
 
