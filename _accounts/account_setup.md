@@ -28,27 +28,6 @@ order: 2
 
         ssh -i /path/to/private_key -l YourAccount cluster.name.here
 
-
--   **For users with MacOS laptops** <br>
-    If you have an openssl version 7+ you
-	will need to do an extra step to use your DSA type ssh key. 
-    Check your openssl version with :
-
-        openssl version
-
-    If more than 7, do one of 
-
-    (1) add a line to your ~/.ssh/config file (create if does not exist)
-
-        PubkeyAcceptedKeyTypes +ssh-dss
-
-    (2) re-create a new ssh key in RSA format with 
-
-        ssh-keygen -t rsa
-
-     and email its public part.
-    
-
 <p></p>
 [Back to Accounts][1]
 

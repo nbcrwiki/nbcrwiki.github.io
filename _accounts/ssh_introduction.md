@@ -8,9 +8,12 @@ order: 3
 
 1.  **For Linux, MacOS, Windows cygwin:**
 
-        ssh-keygen -t dsa*
+        ssh-keygen -t dsa
+        or
+        ssh-keygen -t rsa
+
         
-    You will see tyhe output simiklar to 
+    You will see the output similar to 
 
         Generating public/private dsa key pair.
         Enter file in which to save the key (/home/tester/.ssh/id_dsa): 
@@ -27,11 +30,28 @@ order: 3
     **Note**: You can then email your "id_dsa.pub" file. Keep the
     "id_dsa" file safe and never share it.
 
+   **NOTE: For users with MacOS laptops** <br>
+    If you have an openssl version 7+ you will need to do an extra step to use your DSA type ssh key. 
+    Check your openssl version with :
+
+        openssl version
+
+    If more than 7, do one of 
+
+    (1) add a line to your ~/.ssh/config file (create if does not exist)
+
+        PubkeyAcceptedKeyTypes +ssh-dss
+
+    (2) re-create a new ssh key in RSA format with 
+
+        ssh-keygen -t rsa
+
+
 2.  **For windows PuTTY**
 
-    The Puttey Key Generator, known as
+    The PuTTY Key Generator, known as
     [PuTTYgen](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html "http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html")
-    can be used to generate a keypair. To generate the keypair:
+    can be used to generate a key pair. To generate the key pair:
 
     -   Run the PuTTYgen.
     -   Select the option towards the bottom that says "SSH-2 DSA".
@@ -41,7 +61,7 @@ order: 3
         the administrator.
     -   Enter your passphrase twice.
     -   Then "Save public key" and "Save private key". This will save
-        the keypair to your computer.
+        the key pair to your computer.
     -   When saving your private key, make sure that it is in the ".ppk"
         format.
     -   To authenticate you will need PuTTY, also available at the link
@@ -53,7 +73,7 @@ order: 3
     private key, and then use the "Save Private Key" to convert it into
     a PPK format (PuTTY format).
 
-#### Login to a host using ssh key pair
+#### Login using ssh key pair
 
 1.  **For Linux, MacOS, Windows cygwin:**
 
