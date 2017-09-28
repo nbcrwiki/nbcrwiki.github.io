@@ -30,9 +30,9 @@ order: 3
     **Note**: You can then email your "id_dsa.pub" file. Keep the
     "id_dsa" file safe and never share it.
 
-   **NOTE: For users with MacOS laptops** <br>
+    **NOTE: For users with MacOS laptops** <br>
     If you have an openssl version 7+ you will need to do an extra step to use your DSA type ssh key. 
-    Check your openssl version with :
+    Check your openssl version:
 
         openssl version
 
